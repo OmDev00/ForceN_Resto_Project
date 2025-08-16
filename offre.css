@@ -1,0 +1,146 @@
+html{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff
+    
+}
+
+body
+{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    margin: 5px;     
+}
+header{overflow: hidden;}
+
+nav{background-color: #fff;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position:absolute ;
+    top: 0;
+
+    
+}
+nav a{
+    color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    border:solid 1px #e47f26;
+    border-radius: 5px;
+    margin-right: 20px;
+    position: relative;
+    right: 10px;
+}
+nav a:hover {
+  background-color: #ff6262; 
+  transform: scale(1.05); 
+}
+
+#logooo {
+  height: 40px;
+  width: 40px;
+}
+#logoo{
+  border: none;
+}
+
+.right{
+    position: absolute;
+    right: 20px;
+}
+#r1{
+    position: relative;
+    right: 20px;
+}
+#r2{
+    position: relative;
+    right: 20px;
+}
+#logo_coinG{
+    position: absolute;
+    left: 20px;
+}
+
+.offres-section h2 {
+  font-family: 'Arial Black', Arial, sans-serif;
+  color: #d32f2f;
+  letter-spacing: 1px;
+}
+
+.offre-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.offre-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(211,47,47,0.15);
+}
+
+.offre-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.offre-body {
+  padding: 18px 12px 0 12px;
+}
+
+.offre-body h5 {
+  color: #d32f2f;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.offre-body p {
+  color: #444;
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+
+.offre-body .btn {
+  border-radius: 20px;
+  padding: 6px 24px;
+  font-weight: 600;
+}
+
+
+
+
+.socMedia {
+  background-color: rgb(255, 255, 255);
+  border:dotted #e79941 1px;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.socMedia img {
+  height: 20px; /* taille de l’icône à l'intérieur */
+  width: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  color: #e79941;
+}
+
+.finPleft {
+  display: flex;
+  gap: 10px; /* espace entre les icônes */
+  width: max-content;
+  float: left;
+}
