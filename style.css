@@ -150,16 +150,17 @@ align-items: center;
   transform: scale(1.05);
 }
 
+
+@media (max-width: 500px) {
 .hero-image img {
-  width: 350px;
-  height: 350px;
-  object-fit: cover;
-  position: relative;
-  left: -100px;
-  z-index: 1;
-  border-radius: 50%; /* rend l'image circulaire */
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  width: 200px;
+  height: 200px;
+  
 }
+
+}
+
+
 /* Étiquette centrée au milieu */
 .image-label {
   top: 10px;
@@ -183,11 +184,26 @@ align-items: center;
   padding: 50px;
   background-color: #fff;
   font-family: Arial, sans-serif;
+  flex-wrap: wrap; /* permet de mieux gérer le mobile */
 }
 
-.hero-content {
-  max-width: 50%;
+/* Responsive : inversion de l’ordre */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column; /* image en haut, texte en bas */
+    text-align: center;
+  }
+
+  .hero-image {
+    order: -1; /* l'image passe avant le texte */
+    margin-bottom: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
 }
+
 
 .hero-content h1 {
   font-size: 2.5rem;
@@ -232,12 +248,14 @@ align-items: center;
 }
 
 .hero-image img {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 50%;
+  width: 100%;
+  max-width: 350px;  /* taille max de l'image */
+  aspect-ratio: 1/1; /* force un carré */
+  object-fit: cover; /* centre et recadre l'image */
+  border-radius: 50%; /* rend l'image ronde */
   box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
 }
+
 
 
 /* --- SECTION CATEGORIES POPULAIRES --- */
